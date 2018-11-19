@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel='stylesheet' href='productPage.css'>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Oswald:400,500|Roboto:300" rel="stylesheet">
+
   	<title>Product Landing Page</title>
  </head>
   
   <body>
   	<header id='header'>
   		<nav id = 'nav-bar' role='navigation'>
-  			<a href='#course' class='nav-link'>Content</a>
-  			<a href='#gold-vip' class='nav-link'>Gold/VIP</a>
-  			<a href='#diy' class='nav-link'>DIY</a>
-  			<a href='#register' class='nav-link'>Register</a>
+  			<a href='#course' class='nav-link small-remove'>Content</a>
+  			<a href='#gold-vip' class='nav-link small-remove'>Gold/VIP</a>
+  			<a href=#course class='nav-link '> <img id ='header-img' src='https://d1aettbyeyfilo.cloudfront.net/1mwtt/1064361_15288824210531mw-logo-coolfont-tr5.png'></a>
+  			<a href='#diy' class='nav-link small-remove'>DIY</a>
+  			<a href='#register' class='nav-link small-remove'>Register</a>
   		</nav>
   	</header>
 
-  		<div id='course'>
+  		<div id='course' class='color-pane'>
+        <div id='wrapper'>
   			<div class = 'course-graphic'>
   				<span class='top fas fa-book'></span>
   			</div>
@@ -27,8 +31,9 @@
   			<h1> Courses </h1>
 
   			<div id = 'syllabus'>
-  				<div class='week'> Week 1: Introduction To Python </div>
-  				<div id = 'content'>
+
+  				<div class='collapsible week alt1'  > <p> Week 1: Introduction To Python </p> </div>
+  				<div class = 'content'>
   					<ul>
   						<li> Getting Started: Installing Python on Windows, Mac</li>
   						<li> Numbers</li>	
@@ -47,8 +52,8 @@
   				</div>
   			
   			
-  				<div class='week'> Week 2: Advanced Python </div>
-  				<div id = 'content'>
+  				<div class='collapsible week alt2'> Week 2: Advanced Python </div>
+  				<div class = 'content'>
   					<ul>
   						<li> Using Exercises from Python The Hard Way </li>
   						<li> Exercise 1: A Good First Program </li>
@@ -57,8 +62,8 @@
   					</ul>
   				</div>
   			
-  				<div class='week'> Week 3: Natural Language Processing with Python </div>
-  				<div id = 'content'>
+  				<div class='collapsible week alt1' > Week 3: Natural Language Processing with Python </div>
+  				<div class = 'content'>
   					<ul>
   						<li> Preface </li>
   						<li> Language Processing and Python </li>	
@@ -75,18 +80,114 @@
   						<li> Hackathon: Keyword Strategy </li>
   					</ul>
   				</div>
+
+  				<div class='collapsible week alt2' > Week 4: Artificial Intelligence with Python & Tensorflow </div>
+  				<div class = 'content'>
+  					<ul>
+  						<li> Using Machine Learning Crash Course from Google. </li>
+  					</ul>
+  				</div>
+
+  				<div class='collapsible week alt1' > Week 5: Introductory JavaScript </div>
+  				<div class = 'content'>
+  					<ul>
+						<li>Getting Started: Installing Python on Windows, Mac</li>
+						<li>Numbers</li>
+						<li>Letters</li>
+						<li>Variables and Assignment</li>
+						<li>Mixing It Up</li>
+						<li>More About Functions and Methods</li>
+						<li>Flow Control</li>
+						<li>Arrays and Iterators</li>
+						<li>Writing Your Own Functions</li>
+						<li>Classes</li>
+						<li>There is nothing new in the chapter (recursion)</li>
+						<li>Beyond This Tutorial</li>
+  					</ul>
+  				</div>
+
+  				<div class='collapsible week alt2' > Week 6: Advanced JavaScript </div>
+  				<div class = 'content'>
+  					<ul>
+						<li> Using the Advanced JavaScript open courseware from NYW
+						</li>
+  					</ul>
+  				</div>
+
+  				<div class='collapsible week alt1' > Week 7: Self-Care Week </div>
+  				<div class = 'content'>
+  					<ul>
+						<li> No classes, but our chat server and community is running. Great time to catch up or just rest. :) </li>
+  					</ul>
+  				</div>
+
+  				<div class='collapsible week alt2' > Week 8: Mobile Prototyping (UI/UX) in InvisionApp </div>
+  				<div class = 'content'>
+  					<ul>
+					<li>Introduction to InvisionApp</li>
+					<li>Boards</li>
+					<li>Building Projects</li>
+					<li>Working Together</li>
+					<li>Feedback and Development</li>
+  					</ul>
+  				</div>
+
+  				<div class='collapsible week alt1' > Week 9:  Blockchain </div>
+  				<div class = 'content'>
+  					<ul>
+					<li>Tentative: Using Oxford BlocSoc's intro to Blockchain course</li>
+					<li>Alternative is a Solidity intro course</li>
+  					</ul>
+  				</div>
+
+  				<div class='collapsible week alt2' > Week 10: Virtual Reality </div>
+  				<div class = 'content'>
+  					<ul>
+						<li>3D Posts Create immersive 3D posts and content for the Facebook News Feed.</li>
+						<li>Facebook 360 Create and share immersive stories, places and experiences.</li>
+						<li>Oculus Create compelling VR experiences and reach passionate VR audiences.</li>
+						<li>Quill A VR illustration and animation tool built to help empower artists and creators.</li>
+						<li>React 360 Use web tech to create content for audiences across mobile, web and VR. </li>
+  					</ul>
+  				</div>
+
+  				<div class='collapsible week alt1' > Week 11: Augemented Reality </div>
+  				<div class = 'content'>
+  					<ul>
+						<li>Visual programming in Facebook AR Studio this is Mac only. We need a Windows alternative until AR Studio comes out for Windows.</li>
+  					</ul>
+  				</div>
+
+  				<div class='collapsible week alt2' > Week 12: Introduction to GitHub </div>
+  				<div class = 'content'>
+  					<ul>
+						<li>This week we will go through every click, every screen, from the moment of signing up for a GitHub account to setting up our Git software, to contributing regularly.</li>
+  					</ul>
+  				</div>
+
+  				<div class='collapsible week alt1' > Week 13: Mobile App Development with React.JS </div>
+  				<div class = 'content'>
+  					<ul>
+						<li>Using the Facebook React.JS tutorial and Learning JavaScript Design Patters. </li>
+  					</ul>
+  				</div>
+
   			</div>
+      </div>
   		</div>
 
   		<div id = 'gold-vip'>
-  			<div class = 'course-graphic'>
+  			<div class = 'paid course-graphic'>
   				<span class='top fas fa-certificate'></span>
   			</div>
 
-  			<h1> Fund Yourself Fund Others </h1>
+  			<div id='pay-title'>
+  			<h1 > Fund Yourself Fund Others </h1>
+  			</div>
 
   			<div id = 'gold'>
   				<h3> Gold Membership </h3>
+  				<h5> Price: $299 one time or $29.99 x 12 months, 2,000 spots </h5>
   				<h5> Members Only Live QA </h5>
   				<p class = 'explanation'> Member only live question and answer session following all live lectures. Replays are available to members only </p>
   				<h5> Inner Coding: Mindfulness and Resilience Course </h5>
@@ -94,9 +195,9 @@
   				<h5> Transform LinkedIn and GitHub </h5>
   				<p class="explanation"> Weekly career workshops to transform your LinkedIn and GitHub profiles so that you get more responses from your resume submission on freelancer sites </p>
   				<h5> Helpdesk </h5>
-  				<p class="explanation"> Get personalized help from Mentors either in a Helpdesk ticket, chat, or Skype format. </p>
+  				<p class="explanation"> Open a helpdesk ticket with a link to your code and get personalized help from Mentors either in a ticket, chat, or Skype format.</p>
   				<h5> 1-on-1 Resume Makover </h5>
-  				<p class="explanation"> Receive detailed line-by-line review of your resume in a 1-on-1 call with a Senior Software Engineer. </p>
+  				<p class="explanation"> Receive detailed line-by-line review of your resume in a 1-on-1 call with a Senior Software Engineer to help you break into coding, or to take yourself to the next promotion. Add $3k to $30k per annum to your earnings by targeting and landing more lucrative, better jobs and gigs. </p>
   				<h5> Portfolio Review </h5>
   				<p class="explanation"> Mentors guide you to make a plan for the Summer to create a portfolio of items, provide you with code review so that your online portfolio shows high quality software engineering skills and best practices, and help you to become job ready, or boost your job opportunities. </p>
   				<h5> Job Readiness Certiface </h5>
@@ -106,12 +207,29 @@
 
   			<div id = 'vip'>
   				<h3> VIP Membership </h3>
+  				<h5>$2,999 one time or $299 x 12 months, 20 spots </h5>
   				<p> Gold Membership And... </p>
   				<h5> Breakthrough Session With Ilona </h5>
-  				<p class='explanation'> A 90-minute 1-on-1 with program head, Ilona Budapesti to create a clear goal for your career, recognize hidden challenges, and develop a path and vision. </p>
+  				<p class='explanation'> If you’ve been working to change your career or grow your career for a while now and things aren’t happening as fast as you want, then this Career Accelerator will to help you create a MAJOR career BREAKTHROUGH.
+
+				A lot of women are having an especially difficult time breaking into software engineering as a career or leaping into a flexible and highly lucrative pay range. Women's specific circumstances are not even part of the conversation during performance reviews and promotion considerations. After hearing about so many women's struggles, the Career Accelerator was born.
+				
+				As a VIP Member you will be able to take advantage of a special, “Career Breakthrough” coaching session where
+
+ 				During your 90 minute 1-on-1 with Harvard, Stanford, and Oxford educated software engineer, serial entrepreneur, Buddhist ex-nun Ilona Budapesti you will work to: </p>
+
+ 					<ul class='breakthrough'>
+ 						<li>Create a crystal clear vision for your ‘ultimate career success’ and the “perfect lifestyle” you’d like your career to provide</li>
+						<li> Uncover hidden challenges that may be sabotaging the growth of your career and keeping you working too many hours </li>
+						<li> Leave this session renewed, re-energized, and inspired to turn your career into a highly profitable, flexible lifestyle that provides comfort and security to you and your loved ones… </li>
+ 					</ul>
+
+
+ 				
+
   				<h5> Weekly Coaching </h5>
   				<p class = 'explanation'> An average of three Group Coaching Sessins a month to address the 5 key areas of career success. You will learn how to: </p>
-  				<ol>
+  				<ol class='breakthrough'>
   					<li> Have crystal clarity in your direction and goals </li>
   					<li> Strategize your actions so that you have an action plan every single morning when you wake up and don't waste your time with indecision </li>
   					<li> Upgrade your skills regarding computer science, employability, or negotiating hiring contracts or promotions. </li>
@@ -127,59 +245,63 @@
 
   		</div>
 
-  		<div id = 'diy'>
+  		<div id = 'diy' class='color-pane'>
   			<div class = 'course-graphic'>
   				<span class='top far fa-file'></span>
   			</div>
 
   			<h1> Do It Yourself </h1>
   			<h3> Donation based, open to every womxn and enbie.</h3>
+  			<div id = 'diy-benefits'>
   			<ul>
   				<li> Access to lectures and all course content until end of program </li>
   				<li> Ability to submit to Hackathons </li>
   				<li> Access to Discourd </li>
 
   			</ul>
+  			</div>
+
+  			  <iframe id='video' width="560" height="315" src="https://www.youtube.com/embed/9b91ZfNvYeU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   		</div>
 
   		
   		<div id = 'register'>
-  			<div id = 'course-graphic'>
-  				<span class='fab fa-wpforms'>
+  			<div class = 'course-graphic'>
+  				<span class='top fab fa-wpforms'>
   			</div>
 
   			<h1> Register </h1>
 
-  			<form id='form'>
+  			<form id='form' action='https://www.freecodecamp.com/email-submit'>
   				<div class = 'control-form'>
   					<div class = 'control-input'>
-  						<span class='fas fa-user'>
+  						<span class='lil fas fa-user'>
   						<input type='text' placeholder="First Name" class='form-input' required name='first-name'>
   					</div>
   				</div>
    				<div class = 'control-form'>
   					<div class = 'control-input'>
-  						<span class='fas fa-user'>
+  						<span class='lil fas fa-user'>
   						<input type='text' placeholder="Last Name" class='form-input' required name='last-name'>
   					</div>
   				</div>
   				<div class = 'control-form'>
   					<div class = 'control-input'>
-  						<span class='far fa-envelope'>
-  						<input type='email' placeholder="1245user@example.com" class='form-input' required name='email' id='email'>
+  						<span class='lil far fa-envelope'>
+  						<input type='email' placeholder="user@example.com" class='form-input' required name='email' id='email'>
   					</div>
   				</div> 	
 
    				<div class = 'control-form'>
   					<div class = 'control-input'>
-  						<span class='fas fa-mobile-alt'>
+  						<span class='lil fas fa-mobile-alt'>
   						<input type='number' placeholder="+(00)-(000)-(000)-(0000)" class='form-input' required name='phone-number'>
   					</div>
   				</div> 	
 
    				<div class = 'control-form'>
   					<div class = 'control-input'>
-  						<span class='fas fa-globe'></span>
+  						<span class='lil fas fa-globe'></span>
   						<select class='form-input' required name='country'>
 							<option value> Select an option </option>
 								<option value="AF">Afghanistan</option>
@@ -435,8 +557,10 @@
   					</div>
   				 	</div>
 
-  				<div class='control-form'>
+  				<div class='checks control-form'>
+            <div class = 'boxes-click'>
   					<p class = 'label-title' > What package would you like? </p>
+            <div class = 'options'>
   					<label class='package-option' for='diy_package'> 
   						<input id='diy_package' type='radio' name='package-option' > DIY (Free)
   					</label>
@@ -446,15 +570,76 @@
   					<label class='package-option' for='diy_package'> 
   						<input id='vip_package' type='radio' name='package-option' > VIP (Price)
   					</label>	
+            </div>
+            </div>
   				</div>
 
-  				<button id='submit'> Proceed To Checkout </button>			
+          <div class='checks control-form'>
+            <div class = 'boxes-click'>
+            <p class = 'label-title' > Experience Level: </p>
+            <div class = 'options'>
+            <label class='experience-level' for='beg_level'> 
+              <input id='beg_level' type='radio' name='experience-level' > Beginner
+            </label>
+            <label class='experience-level' for='int_level'> 
+              <input id='int_level' type='radio' name='experience-level' > Intermediate
+            </label>
+            <label class='experience-level' for='adv_level'> 
+              <input id='adv_level' type='radio' name='experience-level' > Advanced
+            </label> 
+            </div>
+            </div>
+          </div>
+
+          <div class='checks control-form'>
+            <div class = 'boxes-click'>
+            <p class = 'label-title' > I would like to suscribe to: </p>
+            <div class = 'options'>
+            <label class='support-groups' for='student'> 
+              <input id='student' type='checkbox' name='support groups' > Student
+            </label>
+            <label class='support-groups' for='job-seeking'> 
+              <input id='job-seeking' type='checkbox' name='support groups' > Job Seeking
+            </label>           
+            <label class='support-groups' for='entrepreneur'> 
+              <input id='entrepreneur' type='checkbox' name='support groups' > Entrepreneur
+            </label>
+            <label class='support-groups' for='mom'> 
+              <input id='mom' type='checkbox' name='support groups' > Mom
+            </label>
+            <label class='support-groups' for='single-mom'> 
+              <input id='single-mom' type='checkbox' name='support groups' > Single-Mom
+            </label>
+            <label class='support-groups' for='non-binary'> 
+              <input id='non-binary' type='checkbox' name='support groups' > Non-Binary
+            </label>
+            <label class='support-groups' for='trans'> 
+              <input id='trans' type='checkbox' name='support groups' > Trans
+            </label>
+            <label class='support-groups' for='career-change'> 
+              <input id='career-change' type='checkbox' name='support groups' > Career Change
+            </label>
+            <label class='support-groups' for='retired'> 
+              <input id='retired' type='checkbox' name='support groups' > Retired
+            </label>
+            </div>
+            </div>
+          </div>        
+
+          <div id='submit-button'>
+          <input type='submit' value= 'Proceed To Checkout' id='submit'> 
+           </div>
+
+
   			</form>
+        
+        
   		</div>
 
 
 
 
+  <script src='productPage.js'></script>
 
 
   	
@@ -462,15 +647,4 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
- 
  </html>
